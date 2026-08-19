@@ -25,10 +25,12 @@ public:
 void displayTitle();
 std::string getUserInput();
 void newTask(std::vector<Task> *tasks, bool isNewTask, int index = 0);
+int helperTaskFunc(std::vector<Task> *tasks, std::string str);
 void editTask(std::vector<Task> *tasks);
 void completeTask(std::vector<Task> *tasks);
+void deleteTask(std::vector<Task> *tasks);
 void displayAllTask(std::vector<Task> tasks, bool isDisplayOnly);
-int getUserInputForEdit(int length, bool isComplete);
+int getUserInputForSelection(std::string str, int length);
 void waitForUserToPressEnter(std::string str);
 void clearScreen();
 
@@ -47,6 +49,8 @@ int main(void) {
       displayAllTask(tasks, true);
     } else if (userInputStr == "4") {
       completeTask(&tasks);
+    } else if (userInputStr == "5") {
+      deleteTask(&tasks);
     }
 
   } while (userInputStr != "0");
@@ -60,7 +64,7 @@ std::string getUserInput() {
   std::string userInputStr;
   clearScreen();
   std::cout << "Enter an option:\n1. Create Task\n2. Edit Task\n3. Display "
-               "Task(s)\n4. Complete Task\n0. Exit\n>>> ";
+               "Task(s)\n4. Complete Task\n5. Delete Task\n0. Exit\n>>> ";
   std::getline(std::cin, userInputStr);
   clearScreen();
 
@@ -82,32 +86,52 @@ void newTask(std::vector<Task> *tasks, bool isNewTask, int index) {
   clearScreen();
 }
 
-void editTask(std::vector<Task> *tasks) {
+int helperTaskFunc(std::vector<Task> *tasks, std::string str) {
   int selectedTask;
 
   if (tasks->size() == 0) {
     waitForUserToPressEnter("There are no tasks to display!\n");
-    return;
+    return -1;
   }
 
   clearScreen();
   displayAllTask(*tasks, false);
-  selectedTask = getUserInputForEdit(tasks->size(), false) - 1;
+  selectedTask = getUserInputForSelection(str, tasks->size()) - 1;
+
+  return selectedTask;
+}
+
+void editTask(std::vector<Task> *tasks) {
+  int selectedTask =
+      helperTaskFunc(tasks, "\nWhat task would you like to edit?: ");
+
+  if (selectedTask == -1) {
+    return;
+  }
+
   newTask(tasks, false, selectedTask);
 }
 
 void completeTask(std::vector<Task> *tasks) {
-  int selectedTask;
+  int selectedTask =
+      helperTaskFunc(tasks, "\nEnter a task you want to mark complete: ");
 
-  if (tasks->size() == 0) {
-    waitForUserToPressEnter("There are no tasks to display!\n");
+  if (selectedTask == -1) {
     return;
   }
 
-  clearScreen();
-  displayAllTask(*tasks, false);
-  selectedTask = getUserInputForEdit(tasks->size(), true) - 1;
   tasks->at(selectedTask).setIsCompleted();
+}
+
+void deleteTask(std::vector<Task> *tasks) {
+  int selectedTask =
+      helperTaskFunc(tasks, "\nEnter a task you want to delete: ");
+
+  if (selectedTask == -1) {
+    return;
+  }
+
+  tasks->erase(tasks->begin() + selectedTask);
 }
 
 void displayAllTask(std::vector<Task> tasks, bool isDisplayOnly) {
@@ -131,30 +155,19 @@ void displayAllTask(std::vector<Task> tasks, bool isDisplayOnly) {
   }
 }
 
-int getUserInputForEdit(int length, bool isComplete) {
+int getUserInputForSelection(std::string str, int length) {
   std::string userInput;
   int castedInput;
 
-  if (isComplete) {
-    std::cout << "Enter which task you want to complete: ";
+  std::cout << str;
+  std::getline(std::cin, userInput);
+
+  castedInput = std::stoi(userInput);
+
+  while (castedInput > length || castedInput <= 0) {
+    std::cout << "Invalid entry!\n" << str << '\n';
     std::getline(std::cin, userInput);
-
     castedInput = std::stoi(userInput);
-
-    while (castedInput > length || castedInput <= 0) {
-      std::cout << "Invalid entry!\nEnter which task you want to complete: ";
-      std::getline(std::cin, userInput);
-    }
-  } else {
-    std::cout << "Enter which task you want to edit: ";
-    std::getline(std::cin, userInput);
-
-    castedInput = std::stoi(userInput);
-
-    while (castedInput > length) {
-      std::cout << "Invalid entry!\nEnter which task you want to edit: ";
-      std::getline(std::cin, userInput);
-    }
   }
 
   return castedInput;
