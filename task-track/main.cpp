@@ -6,6 +6,7 @@
 #include <unistd.h>
 
 class Task {
+private:
   std::string task;
   bool isCompleted;
 
@@ -22,8 +23,9 @@ public:
   void setIsCompleted(bool completed) { isCompleted = completed; }
 };
 
-void displayTitle();
 std::string getUserInput();
+
+void displayTitle();
 void addNewTask(std::vector<Task> *tasks);
 void displayAllTask(std::vector<Task> tasks);
 void waitForUserToPressEnter();
