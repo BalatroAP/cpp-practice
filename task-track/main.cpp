@@ -24,13 +24,10 @@ public:
 };
 
 std::string getUserInput();
-<<<<<<< HEAD
-
 void displayTitle();
 void addNewTask(std::vector<Task> *tasks);
 void displayAllTask(std::vector<Task> tasks);
 void waitForUserToPressEnter();
-=======
 void newTask(std::vector<Task> *tasks, bool isNewTask, int index = 0);
 int helperTaskFunc(std::vector<Task> *tasks, std::string str);
 void editTask(std::vector<Task> *tasks);
@@ -39,7 +36,6 @@ void deleteTask(std::vector<Task> *tasks);
 void displayAllTask(std::vector<Task> tasks, bool isDisplayOnly);
 int getUserInputForSelection(std::string str, int length);
 void waitForUserToPressEnter(std::string str);
->>>>>>> refs/remotes/origin/main
 void clearScreen();
 
 int main(void) {
