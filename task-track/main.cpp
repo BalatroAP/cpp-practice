@@ -1,17 +1,30 @@
 #include <iostream>
+#include <string>
 
 #include "Handler.h"
+#include "Task.h"
 
 using namespace std;
+using json = nlohmann::json;
+
+Task getUserTask();
 
 int main(int argc, char *argv[]) {
   Handler handler;
+  int id = 1;
 
-  cout << "PATH: " << handler.getPath() << '\n';
-  cout << "FILE NAME: " << handler.getFileName() << '\n';
-  cout << "DOES PATH EXISTS: " << handler.isFileExist() << '\n';
-  cout << "IS FILE OPEN: " << handler.file.is_open() << '\n';
-  handler.file << "SOME TEXT";
+  handler.appendTask(getUserTask(), to_string(id++)); 
+  handler.appendTask(getUserTask(), to_string(id++)); 
+  handler.appendTask(getUserTask(), to_string(id++)); 
 
-  handler.closeFile();
+  cout << setw(handler.getFileData().size()) << handler.getFileData() << '\n';
+}
+
+Task getUserTask() {
+  string userInput;
+
+  cout << "Enter task you want to track: ";
+  getline(cin, userInput);
+
+  return Task(userInput);
 }

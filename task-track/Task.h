@@ -13,12 +13,12 @@ public:
   Task(string taskStr);
 
   // Setter
-  void setTask(string task, int id);
-  void setProgress(Progress progress, int id);
+  void setTask(string task);
+  void setProgress(Progress progress);
 
   // Getter
   string getTask();
-  Progress getProgress();
+  int getProgress();
   int getID();
 
 private:

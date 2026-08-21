@@ -8,6 +8,8 @@ Task::Task(string taskStr) {
   this->ID = ID++;
 }
 
-void Task::setTask(string task, int id) {}
+string Task::getTask() { return this->task; }
+int Task::getProgress() { return this->progress; }
 
-void Task::setProgress(Progress progress, int id) {}
+void Task::setTask(string task) { this->task = task; }
+void Task::setProgress(Progress progress) { this->progress = progress; }
