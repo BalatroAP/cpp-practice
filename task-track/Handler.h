@@ -5,6 +5,7 @@
 #include <iostream>
 #include <nlohmann/json.hpp>
 #include <string>
+#include <ctime>
 
 #include "Task.h"
 
@@ -19,6 +20,7 @@ public:
   fs::path getPath();
   fs::path getFileName();
   fs::path getFullFilePath();
+  int getFileUID();
 
   json getFileData();
   json setFileData();
@@ -27,10 +29,12 @@ public:
 
   bool isFileExist();
   void createFile();
+  void updateFileData(json j);
   void closeFile();
 
 private:
   fs::path currPath;
   fs::path fileName;
   json fileData;
+  int fileUID;
 };
