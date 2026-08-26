@@ -20,7 +20,7 @@ vector<string> getCsvFileLines();
 string getFlagArgument(vector<string> flags, string searchFlag);
 void deleteId(vector<Expense> &expenses, int id);
 void overwriteCsv(vector<string> lines);
-void appendLineToCsv(string newLine);
+void appendExpenseToCsv(string newLine);
 void displayCsvData(vector<string> csvLines);
 void displayPrettyExpenses(vector<Expense> expenses);
 void displayTotalExpenses(vector<Expense> expenses);
@@ -48,6 +48,12 @@ int main(int argc, char *argv[]) {
     int id = stoi(getFlagArgument(flags, "--id"));
     deleteId(expenses, id);
     overwriteCsv(convertExpensesToParsedStrings(expenses));
+  } else if (option == "add" && argc > 2) {
+    int newId = expenses[expenses.size() - 1].getId() + 1;
+    int amount = stoi(getFlagArgument(flags, "--amount"));
+    string description = getFlagArgument(flags, "--description");
+    Expense newExpense(newId, amount, "idk", description);
+    appendExpenseToCsv(newExpense.getExpenseAsString());
   } else {
     fmt::print("Not a valid command for expense-tracker\n");
   }
@@ -151,7 +157,7 @@ void overwriteCsv(vector<string> lines) {
   csv.close();
 }
 
-void appendLineToCsv(string newLine) {
+void appendExpenseToCsv(string newLine) {
   ofstream csv;
   csv.open("expense.csv", ios::out | ios::app);
   csv << newLine << '\n';
