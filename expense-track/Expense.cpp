@@ -13,6 +13,16 @@ int Expense::getId() { return this->id; }
 int Expense::getAmount() { return this->amount; }
 string Expense::getDate() { return this->date; }
 string Expense::getDescription() { return this->description; }
+string Expense::getExpenseAsString() {
+  string expense;
+
+  expense.append(to_string(this->id) += ',');
+  expense.append(this->date += ',');
+  expense.append(this->description += ',');
+  expense.append(to_string(this->amount));
+
+  return expense;
+}
 
 // Setter
 
