@@ -9,19 +9,18 @@ class Recipe {
   public:
     Recipe(json j);
 
-  private:
     int id;
-    int calories_per_serving;
-    int cook_time;
-    int prep_time;
+    int caloriesPerServing;
+    int cookTime;
+    int prepTime;
     int protein;
     int servings;
-    string meal_type;
+    string mealType;
     string name;
     string cuisine;
     string description;
     string difficulty;
-    vector<string>dietary_tags;
+    vector<string>dietaryTags;
     vector<string>ingredients;
     vector<string>instructions;
 };
