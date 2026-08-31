@@ -13,7 +13,7 @@ int main(void) {
   vector<Recipe> recipes;
 
   ifstream file;
-  file.open("receipes.json", ios::in);
+  file.open("recipes.json", ios::in);
   j = json::parse(file);
   file.close();
 
@@ -24,6 +24,7 @@ int main(void) {
   }
 
   for (int i = 0, size = recipes.size(); i < size; i++) {
-    fmt::print("{}\n", recipes[i].id);
+    recipes[i].displayRelevantData();
   }
+
 }
