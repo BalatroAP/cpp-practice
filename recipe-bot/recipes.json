@@ -1,1076 +1,122 @@
 {
-  "data": [
-    {
-      "id": 1034,
-      "name": "Acai Bowl American Style",
-      "description": "An American style acai bowl featuring blended acai berries topped with fresh fruit, granola, and coconut for a nutrient-rich breakfast or snack.",
-      "difficulty": "easy",
-      "meal_type": "breakfast",
-      "cuisine": "american",
-      "dietary_tags": [
-        "dairy_free",
-        "vegetarian"
-      ],
-      "servings": 1,
-      "prep_time": 10,
-      "cook_time": 0,
-      "calories_per_serving": 350,
-      "protein": 5,
-      "instructions": [
-        "Blend frozen acai puree with banana, mixed berries, and apple juice until smooth and thick.",
-        "Pour the acai mixture into a bowl.",
-        "Top the acai base with sliced banana, granola, fresh berries, and shredded coconut.",
-        "Optionally, drizzle honey over the toppings for added sweetness.",
-        "Serve immediately for a refreshing and nutritious meal."
-      ],
-      "ingredients": [
-        {
-          "id": 95,
-          "name": "Honey",
-          "category": "sweetener",
-          "quantity": 20,
-          "unit": "ml",
-          "optional": true
-        },
-        {
-          "id": 104,
-          "name": "Apple juice",
-          "category": "beverage",
-          "quantity": 100,
-          "unit": "ml",
-          "optional": false
-        },
-        {
-          "id": 423,
-          "name": "Shredded coconut",
-          "category": "fruit",
-          "quantity": 20,
-          "unit": "g",
-          "optional": false
-        },
-        {
-          "id": 571,
-          "name": "Banana",
-          "category": "fruit",
-          "quantity": 1,
-          "unit": "piece",
-          "optional": false
-        },
-        {
-          "id": 826,
-          "name": "Mixed berry",
-          "category": "fruit",
-          "quantity": 100,
-          "unit": "g",
-          "optional": false
-        },
-        {
-          "id": 956,
-          "name": "Frozen acai puree",
-          "category": "fruit",
-          "quantity": 150,
-          "unit": "g",
-          "optional": false
-        },
-        {
-          "id": 958,
-          "name": "Granola",
-          "category": "grain",
-          "quantity": 50,
-          "unit": "g",
-          "optional": false
-        },
-        {
-          "id": 1337,
-          "name": "Berry",
-          "category": "fruit",
-          "quantity": 50,
-          "unit": "g",
-          "optional": false
-        }
-      ]
-    },
-    {
-      "id": 5389,
-      "name": "Aceitunas Aliñadas (Marinated Olives)",
-      "description": "Aceitunas Aliñadas are Spanish marinated olives flavored with garlic, herbs, citrus zest, and chili, commonly served as a flavorful appetizer or tapa.",
-      "difficulty": "easy",
-      "meal_type": "appetizer",
-      "cuisine": "spanish",
-      "dietary_tags": [
-        "vegan",
-        "vegetarian",
-        "gluten_free",
-        "dairy_free",
-        "nut_free",
-        "halal",
-        "kosher"
-      ],
-      "servings": 4,
-      "prep_time": 15,
-      "cook_time": 0,
-      "calories_per_serving": 150,
-      "protein": 2,
-      "instructions": [
-        "Rinse the olives under cold water to remove excess brine, then drain well.",
-        "In a bowl, combine the sliced garlic, chopped fresh parsley, orange zest, lemon zest, and sliced red chili.",
-        "Add the olives to the bowl along with olive oil, sherry vinegar, and a pinch of salt and black pepper.",
-        "Mix everything thoroughly to ensure the olives are well coated with the marinade.",
-        "Cover the bowl and let the olives marinate in the refrigerator for at least 24 hours to develop flavors, stirring occasionally.",
-        "Before serving, bring the olives to room temperature and adjust seasoning if necessary."
-      ],
-      "ingredients": [
-        {
-          "id": 5,
-          "name": "Olive oil",
-          "category": "oil",
-          "quantity": 120,
-          "unit": "ml",
-          "optional": false
-        },
-        {
-          "id": 6,
-          "name": "Salt",
-          "category": "condiment",
-          "quantity": 1,
-          "unit": "pinch",
-          "optional": false
-        },
-        {
-          "id": 7,
-          "name": "Black pepper",
-          "category": "condiment",
-          "quantity": 1,
-          "unit": "pinch",
-          "optional": false
-        },
-        {
-          "id": 37,
-          "name": "Garlic",
-          "category": "vegetable",
-          "quantity": 2,
-          "unit": "clove",
-          "optional": false
-        },
-        {
-          "id": 96,
-          "name": "Parsley",
-          "category": "herb",
-          "quantity": 1,
-          "unit": "bunch",
-          "optional": false
-        },
-        {
-          "id": 319,
-          "name": "Orange zest",
-          "category": "fruit",
-          "quantity": 1,
-          "unit": "tbsp",
-          "optional": false
-        },
-        {
-          "id": 692,
-          "name": "Olive",
-          "category": "vegetable",
-          "quantity": 500,
-          "unit": "g",
-          "optional": false
-        },
-        {
-          "id": 775,
-          "name": "Lemon zest",
-          "category": "fruit",
-          "quantity": 1,
-          "unit": "tbsp",
-          "optional": false
-        },
-        {
-          "id": 1022,
-          "name": "Sherry vinegar",
-          "category": "condiment",
-          "quantity": 30,
-          "unit": "ml",
-          "optional": false
-        },
-        {
-          "id": 1192,
-          "name": "Red chili",
-          "category": "vegetable",
-          "quantity": 1,
-          "unit": "piece",
-          "optional": false
-        }
-      ]
-    },
-    {
-      "id": 6632,
-      "name": "Acibadem Kurabiyesi (Bitter Almond Cookie)",
-      "description": "Acibadem Kurabiyesi is a traditional Turkish bitter almond cookie known for its chewy texture and almond flavor. It is made from ground almonds, egg whites, and powdered sugar, often topped with a whole almond.",
-      "difficulty": "medium",
-      "meal_type": "dessert",
-      "cuisine": "turkish",
-      "dietary_tags": [
-        "gluten_free",
-        "nut_free"
-      ],
-      "servings": 15,
-      "prep_time": 15,
-      "cook_time": 20,
-      "calories_per_serving": 90,
-      "protein": 3,
-      "instructions": [
-        "Preheat the oven to 160 degrees Celsius (320 degrees Fahrenheit) and line a baking sheet with parchment paper.",
-        "Grind the bitter almond and sweet almond together finely using a food processor or mortar and pestle.",
-        "In a mixing bowl, beat the egg white until frothy but not stiff.",
-        "Gradually add the powdered sugar to the egg white, continuing to beat until the mixture forms a glossy meringue consistency.",
-        "Gently fold the ground almond mixture into the egg white and sugar mixture until a sticky dough forms.",
-        "If desired, add a few drops of almond extract to enhance flavor and mix gently.",
-        "Using a spoon or a cookie scoop, place small portions of the dough onto the prepared baking sheet, spacing them evenly.",
-        "Optionally, place a whole almond on top of each cookie for decoration.",
-        "Bake the cookies in the preheated oven for about 15-20 minutes, until the edges are lightly golden but the center remains soft.",
-        "Remove the cookies from the oven and let them cool on the baking sheet for a few minutes before transferring to a wire rack to cool completely."
-      ],
-      "ingredients": [
-        {
-          "id": 303,
-          "name": "Almond",
-          "category": "nut",
-          "quantity": 150,
-          "unit": "g",
-          "optional": false
-        },
-        {
-          "id": 530,
-          "name": "Egg white",
-          "category": "egg",
-          "quantity": 2,
-          "unit": "piece",
-          "optional": false
-        },
-        {
-          "id": 541,
-          "name": "Confectioner sugar",
-          "category": "sweetener",
-          "quantity": 150,
-          "unit": "g",
-          "optional": false
-        },
-        {
-          "id": 774,
-          "name": "Almond extract",
-          "category": "condiment",
-          "quantity": 1,
-          "unit": "tsp",
-          "optional": true
-        },
-        {
-          "id": 1325,
-          "name": "Whole almond",
-          "category": "nut",
-          "quantity": 15,
-          "unit": "piece",
-          "optional": true
-        },
-        {
-          "id": 2955,
-          "name": "Bitter almond",
-          "category": "nut",
-          "quantity": 100,
-          "unit": "g",
-          "optional": false
-        }
-      ]
-    },
-    {
-      "id": 6466,
-      "name": "Acili Ezme (Spicy Tomato Pepper Paste Dip)",
-      "description": "Acili Ezme is a traditional Turkish spicy tomato and pepper paste dip known for its fresh and fiery flavor, often served alongside grilled meats or as a meze.",
-      "difficulty": "easy",
-      "meal_type": "appetizer",
-      "cuisine": "turkish",
-      "dietary_tags": [
-        "vegan",
-        "vegetarian",
-        "gluten_free",
-        "dairy_free",
-        "nut_free",
-        "halal",
-        "kosher"
-      ],
-      "servings": 4,
-      "prep_time": 15,
-      "cook_time": 0,
-      "calories_per_serving": 90,
-      "protein": 2,
-      "instructions": [
-        "Finely chop the tomatoes, onion, parsley, and green peppers.",
-        "In a bowl, combine the finely chopped vegetables with tomato paste and red pepper paste.",
-        "Add the olive oil, lemon juice, pomegranate molasses, and minced garlic to the mixture and stir well.",
-        "Season with salt, red pepper flakes, and black pepper to taste.",
-        "Let the mixture rest in the refrigerator for at least 30 minutes to allow the flavors to meld together before serving."
-      ],
-      "ingredients": [
-        {
-          "id": 5,
-          "name": "Olive oil",
-          "category": "oil",
-          "quantity": 3,
-          "unit": "tbsp",
-          "optional": false
-        },
-        {
-          "id": 6,
-          "name": "Salt",
-          "category": "condiment",
-          "quantity": 1,
-          "unit": "pinch",
-          "optional": false
-        },
-        {
-          "id": 7,
-          "name": "Black pepper",
-          "category": "condiment",
-          "quantity": 1,
-          "unit": "pinch",
-          "optional": false
-        },
-        {
-          "id": 10,
-          "name": "Tomato",
-          "category": "fruit",
-          "quantity": 4,
-          "unit": "piece",
-          "optional": false
-        },
-        {
-          "id": 11,
-          "name": "Onion",
-          "category": "vegetable",
-          "quantity": 1,
-          "unit": "piece",
-          "optional": false
-        },
-        {
-          "id": 37,
-          "name": "Garlic",
-          "category": "vegetable",
-          "quantity": 2,
-          "unit": "clove",
-          "optional": false
-        },
-        {
-          "id": 96,
-          "name": "Parsley",
-          "category": "herb",
-          "quantity": 1,
-          "unit": "bunch",
-          "optional": false
-        },
-        {
-          "id": 114,
-          "name": "Tomato paste",
-          "category": "condiment",
-          "quantity": 2,
-          "unit": "tbsp",
-          "optional": false
-        },
-        {
-          "id": 126,
-          "name": "Lemon juice",
-          "category": "fruit",
-          "quantity": 2,
-          "unit": "tbsp",
-          "optional": false
-        },
-        {
-          "id": 134,
-          "name": "Red pepper flake",
-          "category": "spice",
-          "quantity": 1,
-          "unit": "tsp",
-          "optional": false
-        },
-        {
-          "id": 656,
-          "name": "Green pepper",
-          "category": "vegetable",
-          "quantity": 2,
-          "unit": "piece",
-          "optional": false
-        },
-        {
-          "id": 2912,
-          "name": "Red pepper paste",
-          "category": "condiment",
-          "quantity": 1,
-          "unit": "tbsp",
-          "optional": false
-        },
-        {
-          "id": 2913,
-          "name": "Pomegranate molasse",
-          "category": "condiment",
-          "quantity": 1,
-          "unit": "tbsp",
-          "optional": true
-        }
-      ]
-    },
-    {
-      "id": 6996,
-      "name": "Acma (Soft Turkish Bread Roll)",
-      "description": "Acma is a traditional soft and fluffy Turkish bread roll, shaped like a crescent, commonly eaten for breakfast or as a snack, known for its tender crumb and lightly glazed seeded top.",
-      "difficulty": "medium",
-      "meal_type": "breakfast",
-      "cuisine": "turkish",
-      "dietary_tags": [
-        "vegetarian"
-      ],
-      "servings": 8,
-      "prep_time": 30,
-      "cook_time": 20,
-      "calories_per_serving": 220,
-      "protein": 6,
-      "instructions": [
-        "In a small bowl, dissolve the yeast and sugar in warm milk and let it activate for about 10 minutes until frothy.",
-        "In a large mixing bowl, combine the flour and salt.",
-        "Make a well in the center of the flour and add the activated yeast mixture, vegetable oil, and softened butter.",
-        "Mix the ingredients until they come together, then knead the dough on a floured surface for about 10 minutes until smooth and elastic.",
-        "Place the dough in a greased bowl, cover it with a clean cloth, and let it rise in a warm place for about 1 hour or until doubled in size.",
-        "Punch down the risen dough and divide it into equal pieces, roughly 80 grams each.",
-        "Roll each piece into an oval shape, then roll into a cylinder and bend into a crescent or 'C' shape, tucking the ends slightly under.",
-        "Place the shaped dough pieces on a baking sheet lined with parchment paper and let them rest and proof for another 30 minutes until puffed.",
-        "Preheat the oven to 190°C (375°F).",
-        "Brush each roll with egg wash made from beaten egg and a little water, then sprinkle with sesame seeds and/or poppy seeds on top.",
-        "Bake the rolls in the preheated oven for 15-20 minutes or until golden brown on top.",
-        "Remove from the oven and let cool slightly on a wire rack before serving."
-      ],
-      "ingredients": [
-        {
-          "id": 6,
-          "name": "Salt",
-          "category": "condiment",
-          "quantity": 5,
-          "unit": "g",
-          "optional": false
-        },
-        {
-          "id": 25,
-          "name": "Butter",
-          "category": "dairy",
-          "quantity": 40,
-          "unit": "g",
-          "optional": false
-        },
-        {
-          "id": 26,
-          "name": "Flour",
-          "category": "grain",
-          "quantity": 500,
-          "unit": "g",
-          "optional": false
-        },
-        {
-          "id": 29,
-          "name": "Egg",
-          "category": "egg",
-          "quantity": 1,
-          "unit": "piece",
-          "optional": false
-        },
-        {
-          "id": 30,
-          "name": "Vegetable oil",
-          "category": "oil",
-          "quantity": 30,
-          "unit": "ml",
-          "optional": false
-        },
-        {
-          "id": 64,
-          "name": "Milk",
-          "category": "dairy",
-          "quantity": 250,
-          "unit": "ml",
-          "optional": false
-        },
-        {
-          "id": 128,
-          "name": "Sugar",
-          "category": "sweetener",
-          "quantity": 15,
-          "unit": "g",
-          "optional": false
-        },
-        {
-          "id": 274,
-          "name": "Sesame seed",
-          "category": "other",
-          "quantity": 5,
-          "unit": "g",
-          "optional": true
-        },
-        {
-          "id": 339,
-          "name": "Poppy seed",
-          "category": "nut",
-          "quantity": 5,
-          "unit": "g",
-          "optional": true
-        },
-        {
-          "id": 661,
-          "name": "Yeast",
-          "category": "other",
-          "quantity": 10,
-          "unit": "g",
-          "optional": false
-        }
-      ]
-    },
-    {
-      "id": 6696,
-      "name": "Acma Peynirli (Soft Roll with Cheese)",
-      "description": "Acma Peynirli is a traditional Turkish soft roll filled with white cheese. It features a tender, fluffy texture with a savory cheese filling, perfect for breakfast or brunch.",
-      "difficulty": "medium",
-      "meal_type": "breakfast",
-      "cuisine": "turkish",
-      "dietary_tags": [
-        "vegetarian"
-      ],
-      "servings": 8,
-      "prep_time": 25,
-      "cook_time": 25,
-      "calories_per_serving": 250,
-      "protein": 8,
-      "instructions": [
-        "In a small bowl, dissolve the sugar and yeast in warm milk and let it sit for about 5 minutes until frothy.",
-        "In a large mixing bowl, combine the flour and salt.",
-        "Add the yeast mixture, vegetable oil, and melted butter to the flour mixture.",
-        "Mix and knead the dough until smooth and elastic, about 10 minutes.",
-        "Cover the dough with a clean towel and let it rise in a warm place for about 1 hour, or until doubled in size.",
-        "Meanwhile, crumble the white cheese and set aside.",
-        "After the dough has risen, punch it down and divide it into equal portions.",
-        "Roll each portion into a small oval shape and place a spoonful of crumbled cheese in the center.",
-        "Seal the edges over the cheese filling and shape into a round soft roll.",
-        "Place the rolls on a baking tray lined with parchment paper, cover, and let them rest for 15 minutes.",
-        "Preheat the oven to 180°C (350°F).",
-        "Brush the rolls with beaten egg and sprinkle sesame seeds on top.",
-        "Bake in the preheated oven for about 20-25 minutes or until golden brown.",
-        "Remove from oven and let cool slightly before serving."
-      ],
-      "ingredients": [
-        {
-          "id": 6,
-          "name": "Salt",
-          "category": "condiment",
-          "quantity": 1,
-          "unit": "tsp",
-          "optional": false
-        },
-        {
-          "id": 25,
-          "name": "Butter",
-          "category": "dairy",
-          "quantity": 30,
-          "unit": "g",
-          "optional": false
-        },
-        {
-          "id": 26,
-          "name": "Flour",
-          "category": "grain",
-          "quantity": 500,
-          "unit": "g",
-          "optional": false
-        },
-        {
-          "id": 29,
-          "name": "Egg",
-          "category": "egg",
-          "quantity": 1,
-          "unit": "piece",
-          "optional": false
-        },
-        {
-          "id": 30,
-          "name": "Vegetable oil",
-          "category": "oil",
-          "quantity": 50,
-          "unit": "ml",
-          "optional": false
-        },
-        {
-          "id": 64,
-          "name": "Milk",
-          "category": "dairy",
-          "quantity": 250,
-          "unit": "ml",
-          "optional": false
-        },
-        {
-          "id": 128,
-          "name": "Sugar",
-          "category": "sweetener",
-          "quantity": 1,
-          "unit": "tbsp",
-          "optional": false
-        },
-        {
-          "id": 657,
-          "name": "Dry yeast",
-          "category": "other",
-          "quantity": 10,
-          "unit": "g",
-          "optional": false
-        },
-        {
-          "id": 2296,
-          "name": "White cheese",
-          "category": "dairy",
-          "quantity": 200,
-          "unit": "g",
-          "optional": false
-        },
-        {
-          "id": 2974,
-          "name": "Sesame",
-          "category": "condiment",
-          "quantity": 2,
-          "unit": "tbsp",
-          "optional": false
-        }
-      ]
-    },
-    {
-      "id": 6640,
-      "name": "Acma Sweet Soft Bread Roll",
-      "description": "Acma is a traditional Turkish sweet soft bread roll known for its tender texture and slightly sweet flavor, commonly enjoyed for breakfast or as a snack.",
-      "difficulty": "medium",
-      "meal_type": "breakfast",
-      "cuisine": "turkish",
-      "dietary_tags": [
-        "vegetarian"
-      ],
-      "servings": 8,
-      "prep_time": 20,
-      "cook_time": 25,
-      "calories_per_serving": 230,
-      "protein": 6,
-      "instructions": [
-        "Warm the milk until lukewarm and dissolve the sugar and yeast in it. Let it sit for 10 minutes until frothy.",
-        "In a large mixing bowl, combine the sifted flour and salt.",
-        "Add the softened butter and the yeast mixture to the flour.",
-        "Mix all ingredients well until the dough starts to come together.",
-        "Knead the dough on a lightly floured surface for about 10 minutes until it is smooth and elastic.",
-        "Place the dough in a greased bowl, cover it with a clean towel, and let it rise in a warm place for about 1 to 1.5 hours, until it doubles in size.",
-        "Punch down the dough to release air and divide it into equal portions according to desired roll size.",
-        "Shape each piece into a round roll by folding and pinching the dough underneath.",
-        "Place the rolls on a baking tray lined with parchment paper, cover, and let them rise again for 30 minutes.",
-        "Preheat the oven to 180°C (350°F).",
-        "Brush the rolls gently with beaten egg to give a shiny, golden finish.",
-        "Bake the rolls in the preheated oven for 20-25 minutes or until golden brown.",
-        "Remove from the oven and let cool on a wire rack before serving."
-      ],
-      "ingredients": [
-        {
-          "id": 6,
-          "name": "Salt",
-          "category": "condiment",
-          "quantity": 1,
-          "unit": "tsp",
-          "optional": false
-        },
-        {
-          "id": 25,
-          "name": "Butter",
-          "category": "dairy",
-          "quantity": 50,
-          "unit": "g",
-          "optional": false
-        },
-        {
-          "id": 26,
-          "name": "Flour",
-          "category": "grain",
-          "quantity": 500,
-          "unit": "g",
-          "optional": false
-        },
-        {
-          "id": 29,
-          "name": "Egg",
-          "category": "egg",
-          "quantity": 1,
-          "unit": "piece",
-          "optional": false
-        },
-        {
-          "id": 64,
-          "name": "Milk",
-          "category": "dairy",
-          "quantity": 250,
-          "unit": "ml",
-          "optional": false
-        },
-        {
-          "id": 128,
-          "name": "Sugar",
-          "category": "sweetener",
-          "quantity": 50,
-          "unit": "g",
-          "optional": false
-        },
-        {
-          "id": 657,
-          "name": "Dry yeast",
-          "category": "other",
-          "quantity": 7,
-          "unit": "g",
-          "optional": false
-        }
-      ]
-    },
-    {
-      "id": 3495,
-      "name": "Acquacotta (Italian Rustic Vegetable Soup)",
-      "description": "Acquacotta is a rustic Italian vegetable soup traditionally made with stale bread and fresh vegetables, topped with a poached egg for a hearty and comforting meal.",
-      "difficulty": "medium",
-      "meal_type": "main",
-      "cuisine": "italian",
-      "dietary_tags": [
-        "vegetarian",
-        "nut_free"
-      ],
-      "servings": 2,
-      "prep_time": 15,
-      "cook_time": 35,
-      "calories_per_serving": 280,
-      "protein": 12,
-      "instructions": [
-        "Soak the dried bread slices in cold water for about 10 minutes to soften them, then squeeze out the excess water.",
-        "Heat olive oil in a large pot over medium heat and sauté the chopped onion and garlic until translucent and fragrant.",
-        "Add the chopped celery and carrot to the pot and cook for 5 minutes until slightly softened.",
-        "Pour in the diced tomato and cook for another 5 minutes, stirring occasionally.",
-        "Add the vegetable broth and bring the mixture to a simmer.",
-        "Season the soup with salt, pepper, and a pinch of dried thyme for flavor.",
-        "Reduce the heat and let the soup simmer gently for about 20 minutes to meld the flavors.",
-        "Lay the soaked bread slices in the bottom of individual serving bowls or soup plates.",
-        "Ladle the hot soup over the bread, allowing the bread to absorb the broth.",
-        "Crack a fresh egg over each bowl and place under a broiler or in a hot oven until the egg whites are set but the yolks remain runny, about 5 to 7 minutes.",
-        "Garnish with chopped fresh parsley and serve immediately."
-      ],
-      "ingredients": [
-        {
-          "id": 5,
-          "name": "Olive oil",
-          "category": "oil",
-          "quantity": 2,
-          "unit": "tbsp",
-          "optional": false
-        },
-        {
-          "id": 6,
-          "name": "Salt",
-          "category": "condiment",
-          "quantity": 1,
-          "unit": "pinch",
-          "optional": false
-        },
-        {
-          "id": 7,
-          "name": "Black pepper",
-          "category": "condiment",
-          "quantity": 1,
-          "unit": "pinch",
-          "optional": false
-        },
-        {
-          "id": 10,
-          "name": "Tomato",
-          "category": "fruit",
-          "quantity": 200,
-          "unit": "g",
-          "optional": false
-        },
-        {
-          "id": 11,
-          "name": "Onion",
-          "category": "vegetable",
-          "quantity": 1,
-          "unit": "piece",
-          "optional": false
-        },
-        {
-          "id": 29,
-          "name": "Egg",
-          "category": "egg",
-          "quantity": 2,
-          "unit": "piece",
-          "optional": false
-        },
-        {
-          "id": 37,
-          "name": "Garlic",
-          "category": "vegetable",
-          "quantity": 2,
-          "unit": "clove",
-          "optional": false
-        },
-        {
-          "id": 87,
-          "name": "Dried thyme",
-          "category": "spice",
-          "quantity": 1,
-          "unit": "pinch",
-          "optional": false
-        },
-        {
-          "id": 96,
-          "name": "Parsley",
-          "category": "herb",
-          "quantity": 1,
-          "unit": "tbsp",
-          "optional": false
-        },
-        {
-          "id": 151,
-          "name": "Carrot",
-          "category": "vegetable",
-          "quantity": 1,
-          "unit": "piece",
-          "optional": false
-        },
-        {
-          "id": 182,
-          "name": "Celery",
-          "category": "vegetable",
-          "quantity": 1,
-          "unit": "piece",
-          "optional": false
-        },
-        {
-          "id": 306,
-          "name": "Bread",
-          "category": "grain",
-          "quantity": 100,
-          "unit": "g",
-          "optional": false
-        },
-        {
-          "id": 498,
-          "name": "Vegetable broth",
-          "category": "other",
-          "quantity": 1,
-          "unit": "cup",
-          "optional": false
-        }
-      ]
-    },
-    {
-      "id": 6582,
-      "name": "Acı Kahve Bitter Turkish Coffee (Bitter Turkish Coffee)",
-      "description": "Acı Kahve Bitter Turkish Coffee is a traditional Turkish coffee known for its strong and bitter flavor, prepared with finely ground coffee slowly brewed to create a thick and aromatic beverage.",
-      "difficulty": "easy",
-      "meal_type": "drink",
-      "cuisine": "turkish",
-      "dietary_tags": [
-        "vegan",
-        "vegetarian",
-        "gluten_free",
-        "dairy_free",
-        "nut_free",
-        "halal",
-        "kosher"
-      ],
-      "servings": 3,
-      "prep_time": 5,
-      "cook_time": 10,
-      "calories_per_serving": 10,
-      "protein": 1,
-      "instructions": [
-        "Add cold water to the cezve or small coffee pot according to the number of servings.",
-        "Add finely ground bitter Turkish coffee to the water (about one heaping teaspoon per cup).",
-        "Add sugar if desired, based on sweetness preference, and stir gently to combine.",
-        "Place the cezve on low heat and slowly bring the coffee to a gentle boil; do not stir after placing on heat.",
-        "As foam begins to form and just before it boils over, remove the cezve from heat to let the foam settle.",
-        "Return the cezve to heat and allow it to foam up again; repeat this process 2-3 times.",
-        "Pour the coffee slowly into small coffee cups, distributing the foam evenly among cups.",
-        "Allow the coffee grounds to settle at the bottom before drinking."
-      ],
-      "ingredients": [
-        {
-          "id": 80,
-          "name": "Water",
-          "category": "other",
-          "quantity": 250,
-          "unit": "ml",
-          "optional": false
-        },
-        {
-          "id": 128,
-          "name": "Sugar",
-          "category": "sweetener",
-          "quantity": 1,
-          "unit": "tsp",
-          "optional": true
-        },
-        {
-          "id": 2961,
-          "name": "Turkish coffee",
-          "category": "beverage",
-          "quantity": 3,
-          "unit": "tsp",
-          "optional": false
-        }
-      ]
-    },
-    {
-      "id": 6798,
-      "name": "Adana Analı Kizli (Adana Meatball with Chickpea)",
-      "description": "Adana Analı Kizli is a traditional Turkish dish featuring juicy Adana-style meatballs stuffed inside larger meatballs, cooked together with chickpeas in a rich tomato sauce, showcasing authentic flavors from Adana region.",
-      "difficulty": "medium",
-      "meal_type": "main",
-      "cuisine": "turkish",
-      "dietary_tags": [
-        "halal",
-        "nut_free"
-      ],
-      "servings": 4,
-      "prep_time": 30,
-      "cook_time": 90,
-      "calories_per_serving": 450,
-      "protein": 32,
-      "instructions": [
-        "Soak chickpeas overnight in cold water to soften them, then drain and cook until tender, approximately 1 hour.",
-        "Combine ground lamb or beef with finely chopped onion, garlic, red pepper flakes, paprika, salt, and pepper in a bowl and mix thoroughly to make the meat mixture.",
-        "Divide a portion of the meat mixture and shape into small balls, which will become the inner meatballs.",
-        "Take another portion of meat mixture, flatten it into a small patty, and place one of the small meatballs inside, enclosing it completely to form a larger stuffed meatball called 'analı'.",
-        "Prepare a tomato-based sauce by sautéing chopped onion and garlic in olive oil until translucent, then add tomato paste, chopped tomatoes, paprika, salt, pepper, and some water or broth; simmer to develop flavor.",
-        "Add cooked chickpeas to the sauce and continue to simmer gently.",
-        "In a separate pan, lightly brown the stuffed meatballs on all sides over medium heat, then add them to the simmering sauce with chickpeas and cook covered for about 30 minutes until cooked through.",
-        "Serve the 'analı' meatballs with chickpeas and sauce hot, optionally garnished with chopped parsley and accompanied by rice or flatbread."
-      ],
-      "ingredients": [
-        {
-          "id": 5,
-          "name": "Olive oil",
-          "category": "oil",
-          "quantity": 3,
-          "unit": "tbsp",
-          "optional": false
-        },
-        {
-          "id": 6,
-          "name": "Salt",
-          "category": "condiment",
-          "quantity": 1,
-          "unit": "tsp",
-          "optional": false
-        },
-        {
-          "id": 7,
-          "name": "Black pepper",
-          "category": "condiment",
-          "quantity": 1,
-          "unit": "tsp",
-          "optional": false
-        },
-        {
-          "id": 10,
-          "name": "Tomato",
-          "category": "fruit",
-          "quantity": 3,
-          "unit": "piece",
-          "optional": false
-        },
-        {
-          "id": 11,
-          "name": "Onion",
-          "category": "vegetable",
-          "quantity": 2,
-          "unit": "piece",
-          "optional": false
-        },
-        {
-          "id": 28,
-          "name": "Paprika",
-          "category": "spice",
-          "quantity": 1,
-          "unit": "tbsp",
-          "optional": false
-        },
-        {
-          "id": 37,
-          "name": "Garlic",
-          "category": "vegetable",
-          "quantity": 4,
-          "unit": "clove",
-          "optional": false
-        },
-        {
-          "id": 50,
-          "name": "Ground lamb",
-          "category": "meat",
-          "quantity": 500,
-          "unit": "g",
-          "optional": false
-        },
-        {
-          "id": 80,
-          "name": "Water",
-          "category": "other",
-          "quantity": 250,
-          "unit": "ml",
-          "optional": false
-        },
-        {
-          "id": 96,
-          "name": "Parsley",
-          "category": "herb",
-          "quantity": 1,
-          "unit": "bunch",
-          "optional": true
-        },
-        {
-          "id": 114,
-          "name": "Tomato paste",
-          "category": "condiment",
-          "quantity": 2,
-          "unit": "tbsp",
-          "optional": false
-        },
-        {
-          "id": 134,
-          "name": "Red pepper flake",
-          "category": "spice",
-          "quantity": 1,
-          "unit": "tbsp",
-          "optional": false
-        },
-        {
-          "id": 689,
-          "name": "Chickpea",
-          "category": "legume",
-          "quantity": 200,
-          "unit": "g",
-          "optional": false
-        }
-      ]
-    }
-  ],
-  "links": {
-    "first": "https://recipeapi.io/api/v1/recipes?lang=en&page=1",
-    "last": "https://recipeapi.io/api/v1/recipes?lang=en&page=1096",
-    "prev": "https://recipeapi.io/api/v1/recipes?lang=en&page=1",
-    "next": "https://recipeapi.io/api/v1/recipes?lang=en&page=3"
+  "data": {
+    "id": 2313,
+    "name": "Pad See Ew with Beef",
+    "description": "Pad See Ew with Beef is a popular Thai stir-fried noodle dish featuring wide rice noodles, tender beef slices, Chinese broccoli, and a savory blend of soy and oyster sauces, delivering a flavorful and hearty meal.",
+    "difficulty": "medium",
+    "meal_type": "main",
+    "cuisine": "thai",
+    "dietary_tags": ["gluten_free", "nut_free", "halal"],
+    "servings": 2,
+    "prep_time": 15,
+    "cook_time": 10,
+    "calories_per_serving": 450,
+    "protein": 28,
+    "instructions": [
+      "Slice the beef thinly against the grain and marinate with soy sauce and a pinch of white pepper for 10 minutes.",
+      "Soak the dried wide rice noodles in warm water for 20 minutes or until soft, then drain and set aside.",
+      "Heat vegetable oil in a large wok over high heat until hot.",
+      "Add the sliced beef to the wok and stir-fry quickly until it just begins to brown, then remove from wok and set aside.",
+      "Add more vegetable oil to the wok if needed and stir-fry the garlic until fragrant.",
+      "Add the drained noodles to the wok and stir-fry for 1-2 minutes to heat through.",
+      "Return the beef to the wok with the noodles.",
+      "Add light soy sauce, dark soy sauce, oyster sauce, and sugar to the wok and stir well to combine all the ingredients evenly.",
+      "Push the noodles and beef to one side of the wok, add beaten egg to the empty side and scramble until partially cooked, then mix into the noodles.",
+      "Add the Chinese broccoli (gai lan) and continue stir-frying until the leaves are wilted and the stems are tender-crisp.",
+      "Season with additional soy sauce or sugar if needed and serve immediately."
+    ],
+    "ingredients": [
+      {
+        "id": 29,
+        "name": "Egg",
+        "category": "egg",
+        "quantity": 1,
+        "unit": "piece",
+        "optional": false
+      },
+      {
+        "id": 30,
+        "name": "Vegetable oil",
+        "category": "oil",
+        "quantity": 2,
+        "unit": "tbsp",
+        "optional": false
+      },
+      {
+        "id": 37,
+        "name": "Garlic",
+        "category": "vegetable",
+        "quantity": 3,
+        "unit": "clove",
+        "optional": false
+      },
+      {
+        "id": 128,
+        "name": "Sugar",
+        "category": "sweetener",
+        "quantity": 1,
+        "unit": "tsp",
+        "optional": false
+      },
+      {
+        "id": 177,
+        "name": "Soy sauce",
+        "category": "condiment",
+        "quantity": 2,
+        "unit": "tbsp",
+        "optional": false
+      },
+      {
+        "id": 224,
+        "name": "Beef sirloin",
+        "category": "meat",
+        "quantity": 200,
+        "unit": "g",
+        "optional": false
+      },
+      {
+        "id": 299,
+        "name": "Oyster sauce",
+        "category": "condiment",
+        "quantity": 1,
+        "unit": "tbsp",
+        "optional": false
+      },
+      {
+        "id": 345,
+        "name": "Dark soy sauce",
+        "category": "condiment",
+        "quantity": 1,
+        "unit": "tbsp",
+        "optional": false
+      },
+      {
+        "id": 407,
+        "name": "White pepper",
+        "category": "condiment",
+        "quantity": 1,
+        "unit": "pinch",
+        "optional": false
+      },
+      {
+        "id": 1506,
+        "name": "Chinese broccoli",
+        "category": "vegetable",
+        "quantity": 150,
+        "unit": "g",
+        "optional": false
+      },
+      {
+        "id": 1508,
+        "name": "Wide rice noodle",
+        "category": "grain",
+        "quantity": 200,
+        "unit": "g",
+        "optional": false
+      }
+    ]
   },
   "meta": {
-    "current_page": 2,
-    "last_page": 1096,
-    "path": "https://recipeapi.io/api/v1/recipes",
-    "per_page": 10,
-    "total": 10953,
     "language": "en"
   }
 }
