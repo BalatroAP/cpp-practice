@@ -7,6 +7,7 @@
 string getKeys();
 string getHeader();
 json getRecipeJsonData();
+dpp::embed getEmbedRecipe(Recipe recipe);
 size_t write_to_string(void *ptr, size_t size, size_t count, void *stream);
 
 int main(void) {
@@ -21,18 +22,7 @@ int main(void) {
       json j = getRecipeJsonData()["data"].get<json>();
       Recipe recipe(j);
 
-      dpp::embed embed =
-          dpp::embed()
-              .set_color(dpp::colors::red)
-              .set_title(recipe.getName())
-              .set_description(recipe.getDescription())
-              .add_field("Difficulty", recipe.getDifficulty())
-              .add_field("Cuisine", recipe.getCuisine())
-              .add_field("Marcos", to_string(recipe.getCaloriesPerServing()))
-              .set_image("https://i.pinimg.com/1200x/8a/cf/03/"
-                         "8acf030195dfa6333f4543dfafa4acbb.jpg")
-              .set_timestamp(time(0))
-              .set_footer(dpp::embed_footer().set_text("Every Second Counts!"));
+      dpp::embed embed = getEmbedRecipe(recipe);
 
       dpp::message msg(event.command.channel_id, embed);
 
@@ -102,4 +92,18 @@ json getRecipeJsonData() {
 size_t write_to_string(void *ptr, size_t size, size_t count, void *stream) {
   ((string *)stream)->append((char *)ptr, 0, size * count);
   return size * count;
+}
+
+dpp::embed getEmbedRecipe(Recipe recipe) {
+  return dpp::embed()
+      .set_color(dpp::colors::red)
+      .set_title(recipe.getName())
+      .set_description(recipe.getDescription())
+      .add_field("Difficulty", recipe.getDifficulty())
+      .add_field("Cuisine", recipe.getCuisine())
+      .add_field("Marcos", "```testting``` testing")
+      .set_image("https://i.pinimg.com/1200x/8a/cf/03/"
+                 "8acf030195dfa6333f4543dfafa4acbb.jpg")
+      .set_timestamp(time(0))
+      .set_footer(dpp::embed_footer().set_text("Every Second Counts!"));
 }

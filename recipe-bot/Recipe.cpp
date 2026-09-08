@@ -1,4 +1,7 @@
 #include "Recipe.h"
+#include <cctype>
+
+string capitilizeString(string str);
 
 void tabbedFmtPrint(string title, string member) {
   fmt::print("\t{}: {}\n", title, member);
@@ -8,9 +11,9 @@ Recipe::Recipe(json j) {
   this->id = j["id"];
   this->name = j["name"];
   this->description = j["description"];
-  this->difficulty = j["difficulty"];
-  this->mealType = j["meal_type"];
-  this->cuisine = j["cuisine"];
+  this->difficulty = capitilizeString(j["difficulty"]);
+  this->mealType = capitilizeString(j["meal_type"]);
+  this->cuisine = capitilizeString(j["cuisine"]);
   this->dietaryTags = j["dietary_tags"];
   this->servings = j["servings"];
   this->prepTime = j["prep_time"];
@@ -98,4 +101,9 @@ void Recipe::setInstructions(vector<string> instructions) {
 }
 void Recipe::setIngredients(vector<json> ingredients) {
   this->ingredients = ingredients;
+}
+
+string capitilizeString(string str) {
+  str[0] = toupper(str[0]);
+  return str;
 }
